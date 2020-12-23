@@ -1,11 +1,17 @@
-import React from "react"
+import React from 'react';
+import GlobalStyles from './styles/global';
+import { Menu, Layout, Main } from './components';
+import { AboutMe } from './pages';
 
 const App = () => {
   return (
     <>
-      <h1> Portfólio </h1>
+      <GlobalStyles />
+      <Layout>
+        <AboutMe />
+      </Layout>
     </>
   );
-}
+};
 
 export default App;
