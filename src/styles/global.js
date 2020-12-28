@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import "../assets/fonts/fonts.css"
 
 export default createGlobalStyle`
 
@@ -17,10 +18,10 @@ export default createGlobalStyle`
     }
     body {
         background-color: #FFFFFF;
-        color: black;
+        color: var(--primary);
+        font-family: 'Josefin Sans', cursive;
     }
     :root{
-        --primary: #8D70FB;
-        --primary-dark: #0c0a26;
+        --primary: #3B3838;
     }
 `;

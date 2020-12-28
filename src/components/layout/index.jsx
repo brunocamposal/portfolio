@@ -1,14 +1,19 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, OnePage } from './styles';
 import Menu from '../menu';
+import { Main, AboutMe } from '../../pages';
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
+      <Menu />
       <Container>
-        <Menu />
-        {children}
+        <OnePage>
+          <Main />
+          <AboutMe />
+          olawewe
+        </OnePage>
       </Container>
     </>
   );

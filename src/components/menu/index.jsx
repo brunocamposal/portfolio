@@ -13,10 +13,10 @@ const Menu = () => {
   return (
     <>
       <Container>
+        <Title>
+          <FontAwesomeIcon icon={faLaptopCode} /> PORTFÓLIO
+        </Title>
         <Nav>
-          <Title>
-            <FontAwesomeIcon icon={faLaptopCode} /> PORTFÓLIO
-          </Title>
           <Item>
             <FontAwesomeIcon icon={faHome} /> HOME
           </Item>

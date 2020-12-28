@@ -1,40 +1,33 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-    url(${(props) => props.image});
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
+  background-color: #f1f1f1;
+  width: 82vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 80px;
   text-align: center;
 
   h1 {
-    color: white;
     font-weight: 700;
-    font-size: 3.2rem;
-    padding-bottom: 30px;
-    font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
   }
 
   h2 {
-    color: white;
-    font-size: 1.8rem;
-    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: #888888;
+    width: 60vw;
+    margin-bottom: 40px;
   }
 `;
 
-export const Perfil = styled.div`
-  background-image: url(${(props) => props.image});
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 400px;
-  height: 400px;
-  border-radius: 200px;
-  background-color: white;
-  margin-bottom: 15px;
+export const Hr = styled.div`
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary);
+  margin-bottom: 40px;
 `;
