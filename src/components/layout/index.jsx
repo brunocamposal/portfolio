@@ -12,7 +12,6 @@ const Layout = () => {
         <OnePage>
           <Main />
           <AboutMe />
-          olawewe
         </OnePage>
       </Container>
     </>

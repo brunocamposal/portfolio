@@ -11,6 +11,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
+  text-align: center;
 
   h1 {
     color: white;
@@ -23,6 +24,10 @@ export const Container = styled.div`
     color: white;
     font-size: 1.8rem;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100vw;
   }
 `;
 

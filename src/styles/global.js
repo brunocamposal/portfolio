@@ -14,14 +14,15 @@ export default createGlobalStyle`
         max-width: 100vw;
         height: 100%;
         width: 100%;
-        scroll-behavior: smooth;
     }
     body {
         background-color: #FFFFFF;
-        color: var(--primary);
+        color: var(--primary-font);
         font-family: 'Josefin Sans', cursive;
+        scroll-behavior: smooth;
     }
     :root{
-        --primary: #3B3838;
+        --primary-font: #3B3838;
+        --primary-bg: #f1f1f1;
     }
 `;

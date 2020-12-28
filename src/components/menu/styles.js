@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: fixed;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Nav = styled.div`
