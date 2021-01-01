@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import "../assets/fonts/fonts.css"
+import '../assets/fonts/fonts.css';
 
 export default createGlobalStyle`
 
@@ -21,6 +21,7 @@ export default createGlobalStyle`
         font-family: 'Josefin Sans', cursive;
         scroll-behavior: smooth;
     }
+
     :root{
         --primary-font: #3B3838;
         --primary-bg: #f1f1f1;

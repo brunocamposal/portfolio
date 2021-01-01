@@ -31,3 +31,25 @@ export const Title = styled.h2`
   padding: 40px;
   position: sticky;
 `;
+
+export const Medias = styled.div`
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 35px;
+
+  .icon {
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-font);
+
+    &:hover {
+      color: #0F77FA;
+    }
+  }
+`;

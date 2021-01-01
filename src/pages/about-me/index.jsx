@@ -28,6 +28,7 @@ const AboutMe = () => {
               </div>
               <h3> HTML </h3>
               <h4> HTML 5 </h4>
+          
             </Skill>
           </Col>
           <Col>
