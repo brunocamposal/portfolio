@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 
 import {
-  Container,
-  Button,
   ButtonContainer,
   Hr,
   Grid,
   Col,
   Image,
   Description,
-  Title,
 } from './styles';
 import { motion } from 'framer-motion';
 import skambo from '../../assets/images/skambo.png';
@@ -18,6 +15,7 @@ import register_user from '../../assets/images/register_user.png';
 import lig_4 from '../../assets/images/lig_4.png';
 import fb_kenzie from '../../assets/images/fb_kenzie.png';
 import torre_de_hanoi from '../../assets/images/torre_de_hanoi.png';
+import { Button, Container } from '../../components';
 
 const MyProjects = () => {
   const [hoverEffect, setHoverEffect] = useState({
@@ -87,14 +85,15 @@ const MyProjects = () => {
       setHoverEnter: () => setHoverEffect({ register_user: true }),
       setHoverLeave: () => setHoverEffect({ register_user: false }),
       link: 'https://cadastrodeusuario-henrique-e-bruno.vercel.app/',
-      repo: 'https://gitlab.com/brunocamposal/cadastro-de-usu-rio-integra-o-com-api',
+      repo:
+        'https://gitlab.com/brunocamposal/cadastro-de-usu-rio-integra-o-com-api',
     },
   ];
 
   return (
     <>
-      <Container>
-        <h1> MEUS PROJETOS</h1>
+      <Container id="my-projects" color="var(--primary-font)">
+        <h2> MEUS PROJETOS</h2>
         <Hr />
         <Grid>
           {projects.map(
@@ -136,7 +135,14 @@ const MyProjects = () => {
                           transition={{ delay: 0.1, type: 'tween' }}
                         >
                           <ButtonContainer>
-                            <Button href={link}> Ver Projeto </Button>
+                            <Button
+                              href={link}
+                              hoverColor="white"
+                              hoverBg="#31393C"
+                              color="black"
+                            >
+                              Ver Projeto
+                            </Button>
                           </ButtonContainer>
                         </motion.div>
                       </>

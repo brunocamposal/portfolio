@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 17vw;
+  margin-left: 18%;
 
-  @media (max-width: 480px) {
+  @media (max-width: 1300px) {
     margin: 0;
   }
 `;

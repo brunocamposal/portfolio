@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   position: fixed;
 
-  @media (max-width: 480px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 `;
@@ -16,13 +16,14 @@ export const Nav = styled.div`
   overflow: auto;
 `;
 
-export const Item = styled.a`
+export const Item = styled.div`
   text-decoration: none;
-  padding: 30px 0px 20px 40px;
+  margin: 30px 0px 20px 40px;
   font-weight: 700;
   font-variant: normal;
   font-style: normal;
   font-size: 0.9em;
+  cursor: pointer;;
 `;
 
 export const Title = styled.h2`

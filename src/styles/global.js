@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import '../assets/fonts/fonts.css';
 
 export default createGlobalStyle`
-
     *{
         margin: 0;
         padding: 0;
@@ -23,7 +22,7 @@ export default createGlobalStyle`
     }
 
     :root{
-        --primary-font: #3B3838;
+        --primary-font: #31393C;
         --primary-bg: #f1f1f1;
     }
 `;

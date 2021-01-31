@@ -13,23 +13,36 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import { Container, Nav, Item, Title, Medias } from './styles';
+import { Link } from 'react-scroll';
 
 const Menu = () => {
   return (
     <>
       <Container>
         <Title>
-          <FontAwesomeIcon icon={faLaptopCode} /> PORTFÓLIO
+          <FontAwesomeIcon icon={faLaptopCode} />
+          <Link to="home" spy={true} smooth={true} duration={500}>
+            PORTFÓLIO
+          </Link>
         </Title>
         <Nav>
           <Item>
-            <FontAwesomeIcon icon={faHome} /> HOME
+            <FontAwesomeIcon icon={faHome} />
+            <Link to="home" spy={true} smooth={true} duration={500}>
+              HOME
+            </Link>
           </Item>
           <Item>
-            <FontAwesomeIcon icon={faUser} /> SOBRE MIM
+            <FontAwesomeIcon icon={faUser} />
+            <Link to="about-me" spy={true} smooth={true} duration={500}>
+              SOBRE MIM
+            </Link>
           </Item>
           <Item>
-            <FontAwesomeIcon icon={faFolderOpen} /> MEUS PROJETOS
+            <FontAwesomeIcon icon={faFolderOpen} />
+            <Link to="my-projects" spy={true} smooth={true} duration={500}>
+              MEUS PROJETOS
+            </Link>
           </Item>
           <Item>
             <FontAwesomeIcon icon={faPhoneAlt} /> CONTATO

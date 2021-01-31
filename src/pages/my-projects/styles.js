@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: var(--primary-bg);
-  width: 82vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,9 +31,8 @@ export const Container = styled.div`
     padding-top: 15px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 1300px) {
     width: 100vw;
-    height: 100%;
   }
 `;
 
@@ -97,11 +96,3 @@ export const ButtonContainer = styled.div`
   justify-content: center;
 `;
 
-export const Button = styled.a`
-  display: inline-block;
-  padding: 10px 25px;
-  text-decoration: none;
-  border: 1px solid var(--primary-font);
-  color: var(--primary-font);
-  cursor: pointer;
-`;

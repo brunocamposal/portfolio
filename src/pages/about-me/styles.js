@@ -1,49 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  background-color: var(--primary-bg);
-  width: 82vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 80px;
-  text-align: center;
-
-  h1 {
-    font-weight: 700;
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-  }
-
-  h2 {
-    font-weight: 200;
-    font-size: 1.8rem;
-    width: 60vw;
-    margin: 30px;
-  }
-
-  h3 {
-    font-weight: 700;
-    font-size: 1.3rem;
-    width: 60vw;
-    margin-bottom: 10px;
-  }
-
-  h4 {
-    font-weight: 200;
-    font-size: 1.2rem;
-    color: #888888;
-    width: 60vw;
-    margin-bottom: 40px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100vw;
-    height: 100%;
-  }
-`;
-
 export const Hr = styled.div`
   width: 100px;
   height: 3px;
@@ -52,33 +8,21 @@ export const Hr = styled.div`
 `;
 
 export const Grid = styled.div`
-  width: 60vw;
+  max-width: 900px;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-
-  @media (max-width: 480px) {
-    flex-direction: column;
-  }
+  align-items: center;
 `;
 
 export const Col = styled.div`
-  width: 20vw;
-  height: 10vw;
+  width: 280px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 35px;
+  justify-content: center;;
   text-align: center;
-  margin-bottom: 0px;
-
-  @media (max-width: 480px) {
-    width: 60vw;
-    height: 30vw;
-    margin-bottom: 20px;
-  }
 `;
 
 export const Skill = styled.div`
@@ -91,4 +35,9 @@ export const Image = styled.img`
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
+`;
+
+
+export const Description = styled.div`
+  width: 60vw;
 `;
