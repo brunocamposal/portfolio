@@ -16,7 +16,13 @@ const Main = () => {
               Quem sou eu
             </Button>
           </Link>
-          <Button color="white" mr="15px" hoverBg="white" hoverColor="black">
+          <Button
+            href="https://drive.google.com/file/d/1mYTn9syNzzZCA3JKCJGZ-zqhGM2oYc1Z/view?usp=sharing"
+            color="white"
+            mr="15px"
+            hoverBg="white"
+            hoverColor="black"
+          >
             Curriculo
           </Button>
         </Buttons>

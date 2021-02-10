@@ -7,15 +7,20 @@ import { languages_and_frameworks } from './helper';
 const AboutMe = () => {
   return (
     <>
-      <Container id="about-me" color="var(--primary-font)" secundaryColor="#888888">
+      <Container
+        id="about-me"
+        color="var(--primary-font)"
+        secundaryColor="#888888"
+      >
         <h2> SOBRE MIM </h2>
         <Hr />
         <Description>
           <h4>
-            Hello This is Eric Smith a Creative Freelance Designer and Front End
-            Developer Based on Autralia, Melbourne I Have 6+ Years Experience in
-            User Interface and User Experience Currently Work at Themeforest,
-            Envato as a Freelance Designer. Hire me for more...
+            Tenho 20 anos, e atualmente sou estudante da Kenzie Academy Brasil,
+            curso que forma desenvolvedores full-stack. Eu gosto de séries,
+            músicas, futebol, jogar video game e programar. Desde criança,
+            tenho interesse na área da informática e minha vontade é trabalhar
+            como desenvolvedor front-end, produzindo sites e sistemas.
           </h4>
         </Description>
         <p> Linguagens &amp; Frameworks </p>

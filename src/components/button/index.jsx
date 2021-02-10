@@ -2,9 +2,10 @@ import React from 'react';
 
 import { StyledButton } from './styles';
 
-const Button = ({ children, color, mr, hoverBg, hoverColor }) => {
+const Button = ({ href, children, color, mr, hoverBg, hoverColor }) => {
   return (
     <StyledButton
+      href={href}
       color={color}
       mr={mr}
       hoverBg={hoverBg}

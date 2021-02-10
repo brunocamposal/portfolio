@@ -44,9 +44,9 @@ const Menu = () => {
               MEUS PROJETOS
             </Link>
           </Item>
-          <Item>
+          {/*<Item>
             <FontAwesomeIcon icon={faPhoneAlt} /> CONTATO
-          </Item>
+          </Item> */}
           <Medias>
             <a href="https://github.com/brunocamposal">
               <FontAwesomeIcon icon={faGithub} className="icon" />

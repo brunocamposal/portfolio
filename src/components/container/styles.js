@@ -46,7 +46,7 @@ export const StyledContainer = styled.div`
   p {
     color: ${({ color }) => color};
     font-size: 1.8rem;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
   }
 
   @media (max-width: 1300px) {

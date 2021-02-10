@@ -1,30 +1,23 @@
 import React, { useState } from 'react';
 
-import {
-  ButtonContainer,
-  Hr,
-  Grid,
-  Col,
-  Image,
-  Description,
-} from './styles';
+import { ButtonContainer, Hr, Grid, Col, Image, Description } from './styles';
 import { motion } from 'framer-motion';
 import skambo from '../../assets/images/skambo.png';
 import book_book from '../../assets/images/book_book.png';
 import register_user from '../../assets/images/register_user.png';
-import lig_4 from '../../assets/images/lig_4.png';
+import kitchin_kanri from '../../assets/images/kitchin_kanri.png';
 import fb_kenzie from '../../assets/images/fb_kenzie.png';
-import torre_de_hanoi from '../../assets/images/torre_de_hanoi.png';
+import lig_4 from '../../assets/images/lig_4.png';
 import { Button, Container } from '../../components';
 
 const MyProjects = () => {
   const [hoverEffect, setHoverEffect] = useState({
+    kitchin_kanri: false,
     skambo: false,
     book_book: false,
     register_user: false,
     fb_kenzie: false,
     lig_4: false,
-    torre_de_hanoi: false,
   });
 
   const projects = [
@@ -49,12 +42,24 @@ const MyProjects = () => {
       repo: 'https://gitlab.com/brunocamposal/book-book',
     },
     {
-      name: 'Jogo Torre de Hanói ',
+      name: 'Kitchin Kanri',
+      languages: 'Python / Flask/ Jinja 2 / Marshmallow',
+      image: kitchin_kanri,
+      hover: hoverEffect.kitchin_kanri,
+      setHoverEnter: () => setHoverEffect({ kitchin_kanri: true }),
+      setHoverLeave: () => setHoverEffect({ kitchin_kanri: false }),
+      link: 'https://kitchin-kanri.herokuapp.com/',
+      repo: 'https://github.com/brunocamposal/kitchin-kanri',
+    },
+    {
+      name: 'Jogo Lig 4 ',
       languages: 'HTML / CSS / JavaScript',
-      image: torre_de_hanoi,
-      hover: hoverEffect.torre_de_hanoi,
-      setHoverEnter: () => setHoverEffect({ torre_de_hanoi: true }),
-      setHoverLeave: () => setHoverEffect({ torre_de_hanoi: false }),
+      image: lig_4,
+      hover: hoverEffect.lig_4,
+      setHoverEnter: () => setHoverEffect({ lig_4: true }),
+      setHoverLeave: () => setHoverEffect({ lig_4: false }),
+      link: 'https://viniciusplg.gitlab.io/lig-4/',
+      repo: 'https://gitlab.com/viniciusplg/lig-4',
     },
     {
       name: 'Mockup Facebook Kenzie',
@@ -66,17 +71,6 @@ const MyProjects = () => {
       link: 'https://brunocamposal.gitlab.io/assessment-socialmockup/',
       repo: 'https://gitlab.com/brunocamposal/assessment-socialmockup',
     },
-    {
-      name: 'Jogo Lig 4',
-      languages: 'HTML / CSS / JavaScript',
-      image: lig_4,
-      hover: hoverEffect.lig_4,
-      setHoverEnter: () => setHoverEffect({ lig_4: true }),
-      setHoverLeave: () => setHoverEffect({ lig_4: false }),
-      link: 'https://brunocamposal.gitlab.io/lig-4/',
-      repo: 'https://gitlab.com/brunocamposal/lig-4',
-    },
-
     {
       name: 'Cadastro de Usuário Kenzie',
       languages: 'React JS / Redux / Thunk ',
@@ -106,6 +100,7 @@ const MyProjects = () => {
                 setHoverEnter,
                 setHoverLeave,
                 link,
+                repo,
               },
               key
             ) => (
@@ -131,10 +126,19 @@ const MyProjects = () => {
                           <h4> {languages} </h4>
                         </motion.div>
                         <motion.div
-                          animate={{ y: -50 }}
+                          animate={{ y: -90 }}
                           transition={{ delay: 0.1, type: 'tween' }}
                         >
                           <ButtonContainer>
+                            <Button
+                              href={repo}
+                              hoverColor="white"
+                              hoverBg="#31393C"
+                              color="black"
+                              mr="15px"
+                            >
+                              Repositório
+                            </Button>
                             <Button
                               href={link}
                               hoverColor="white"

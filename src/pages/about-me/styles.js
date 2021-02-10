@@ -4,7 +4,7 @@ export const Hr = styled.div`
   width: 100px;
   height: 3px;
   background-color: var(--primary-font);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `;
 
 export const Grid = styled.div`
