@@ -4,7 +4,6 @@ import {
   faHome,
   faUser,
   faFolderOpen,
-  faPhoneAlt,
   faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -44,9 +43,6 @@ const Menu = () => {
               MEUS PROJETOS
             </Link>
           </Item>
-          {/*<Item>
-            <FontAwesomeIcon icon={faPhoneAlt} /> CONTATO
-          </Item> */}
           <Medias>
             <a href="https://github.com/brunocamposal">
               <FontAwesomeIcon icon={faGithub} className="icon" />
